@@ -1,7 +1,7 @@
 const p = window.PROFILE;
 const el = id => document.getElementById(id);
 const escapeHTML = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-for (const [id,value] of Object.entries({'profile-name':p.name,'english-name':p.englishName,school:p.school,headline:p.headline,intro:p.intro,'about-text':p.about,certificate:p.certificate,'footer-name':p.englishName,updated:p.updated,year:new Date().getFullYear()})) el(id).textContent=value;
+for (const [id,value] of Object.entries({'profile-name':p.name,'english-name':p.englishName,school:p.school,degree:'学历：'+p.degree,major:'专业：'+p.major,headline:p.headline,intro:p.intro,'about-text':p.about,certificate:p.certificate,'footer-name':p.englishName,updated:p.updated,year:new Date().getFullYear()})) el(id).textContent=value;
 for (const id of ['sidebar-email','contact-email']) el(id).href='mailto:'+p.email;
 el('contact-email').textContent=p.email+' ↗';
 el('interests').innerHTML=p.interests.map((x,i)=>`<div><span class="mini-index">0${i+1}</span><h3>${escapeHTML(x.title)}</h3><p>${escapeHTML(x.text)}</p></div>`).join('');

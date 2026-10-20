@@ -1,7 +1,7 @@
 // 日常更新只需修改这个文件。保留引号、逗号和括号；文字中的英文双引号请写成 \"。
 window.PROFILE = {
-  name: '胡金涛', englishName: 'Jintao Hu', school: '汕头大学',
-  email: '14750206858@163.com', updated: '2026-10-16',
+  name: '胡金涛', englishName: 'Jintao Hu', school: '汕头大学', degree: '硕士', major: '人工智能',
+  email: '14750206858@163.com', updated: '2026-10-20',
   headline: '专注机器人与嵌入式开发。',
   intro: '我关注机器人自主导航、强化学习与嵌入式系统，喜欢把算法、硬件和软件连接起来，完成从仿真验证到设备部署的完整实践。',
   about: '围绕自主探索与智能感知，我在 ROS / Gazebo 中开展路径规划与强化学习实验，也基于 Linux、STM32、GD32 和 K230 开发嵌入式应用。我的项目经历涵盖移动机器人、车载交互系统、数字示波器与手语识别。',
